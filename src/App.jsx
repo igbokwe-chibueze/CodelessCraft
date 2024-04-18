@@ -1,11 +1,27 @@
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import Hero from "./sections/Hero";
+import Navbar from "./components/Navbar";
+
+
 export default function App() {
   return (
-    <>
-      <div className="h-screen bg-teal-500">
-        <h1 className="text-3xl text-center font-bold underline">
-          Hello world!
-        </h1>
-      </div>
-    </>
+    <main>
+      <Router>
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <div>
+                <Navbar/>
+                {/* <BackToTop usage={"section"}/> */}
+                <section>
+                  <Hero/>
+                </section>
+              </div>
+            }
+          />
+        </Routes>
+      </Router>
+    </main>
   )
 }
