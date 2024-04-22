@@ -3,3 +3,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Hero */
+.webTypes {
+    @apply flex justify-center items-center w-32 h-7 px-4 py-1 bg-white rounded-md border-2 shadow-sm;
+  }
+  
+.webTypes p {
+    @apply text-center text-secColor2 text-sm font-normal leading-tight text-nowrap
+}
+
+  /* ParallaxText Component*/
+  .parallax {
+    @apply flex w-full overflow-hidden tracking-tight leading-none whitespace-nowrap flex-nowrap
+  }
+
+  .scroller {
+    @apply flex justify-center items-center w-fit font-semibold uppercase text-4xl md:text-6xl whitespace-nowrap flex-nowrap
+  }
+  /*** end parallaxtext component***/
+  

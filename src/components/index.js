@@ -1,6 +1,8 @@
+import BrandsComponent from "./BrandsComponent";
 import CustomBtn from "./CustomBtn";
 import NavItem from "./NavItem";
 import Navbar from "./Navbar";
+import ParallaxText from "./ParallaxText";
 import ThemeSwitcher from "./ThemeSwitcher";
 
 
@@ -8,5 +10,7 @@ export {
     CustomBtn,
     ThemeSwitcher,
     Navbar,
-    NavItem
+    NavItem,
+    BrandsComponent,
+    ParallaxText
 }

@@ -5,7 +5,7 @@ import Navbar from "./components/Navbar";
 
 export default function App() {
   return (
-    <main>
+    <main className="font-baseFont">
       <Router>
         <Routes>
           <Route
