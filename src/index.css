@@ -13,13 +13,16 @@
     @apply text-center text-secColor2 text-sm font-normal leading-tight text-nowrap
 }
 
-  /* ParallaxText Component*/
-  .parallax {
-    @apply flex w-full overflow-hidden tracking-tight leading-none whitespace-nowrap flex-nowrap
-  }
+/* ParallaxText Component*/
+.parallax {
+  @apply flex w-full overflow-hidden tracking-tight leading-none whitespace-nowrap flex-nowrap
+}
 
-  .scroller {
-    @apply flex justify-center items-center w-fit font-semibold uppercase text-4xl md:text-6xl whitespace-nowrap flex-nowrap
-  }
-  /*** end parallaxtext component***/
-  
+.scroller {
+  @apply flex justify-center items-center w-fit font-semibold uppercase text-4xl md:text-6xl whitespace-nowrap flex-nowrap
+}
+/*** end parallaxtext component***/
+
+.hamburgerBtn{
+  @apply block p-1 rounded-md hover:bg-secColor2 hover:rounded-lg transition-all duration-300 ease-linear focus:bg-secColor3 focus:rounded-lg
+}

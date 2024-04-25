@@ -1,5 +1,6 @@
 import BrandsComponent from "./BrandsComponent";
 import CustomBtn from "./CustomBtn";
+import Menu from "./Menu";
 import NavItem from "./NavItem";
 import Navbar from "./Navbar";
 import ParallaxText from "./ParallaxText";
@@ -12,5 +13,6 @@ export {
     Navbar,
     NavItem,
     BrandsComponent,
-    ParallaxText
+    ParallaxText,
+    Menu
 }

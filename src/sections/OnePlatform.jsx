@@ -20,7 +20,7 @@ const CircleWithImage = ({ imageUrl, x, y }) => {
 const OnePlatform = () => {
   return (
     <div className='w-full h-screen mt-[30px] px-4 md:px-[80px]'>
-      <div className="flex flex-col md:flex-row md:pl-[32px] h-full">
+      <div className="flex flex-col lg:flex-row md:pl-[32px] h-full">
         {/* Left Column */}
         <div className="md:w-[490px] md:h-[372px] mt-16 md:mt-[120px] mb-[10px] md:mb-[204px]">
 

@@ -13,7 +13,7 @@ export default function App() {
             path="/"
             element={
               <div>
-                {/* <Navbar/> */}
+                <Navbar/>
                 {/* <BackToTop usage={"section"}/> */}
                 <section>
                   {/* <Hero/> */}
