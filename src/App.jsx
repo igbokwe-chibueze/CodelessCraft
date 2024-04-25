@@ -1,6 +1,7 @@
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import Hero from "./sections/Hero";
 import Navbar from "./components/Navbar";
+import OnePlatform from "./sections/OnePlatform";
 
 
 export default function App() {
@@ -12,10 +13,11 @@ export default function App() {
             path="/"
             element={
               <div>
-                <Navbar/>
+                {/* <Navbar/> */}
                 {/* <BackToTop usage={"section"}/> */}
                 <section>
-                  <Hero/>
+                  {/* <Hero/> */}
+                  <OnePlatform/>
                 </section>
               </div>
             }
