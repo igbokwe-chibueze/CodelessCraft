@@ -43,7 +43,7 @@ const ParallaxText = ({ children, baseVelocity = 100, clamp = false }) => {
             * dynamically generated number of children. 
         */}
         {[...Array(4)].map((_, index) => (
-            <span key={index} className="block mr-[64px]">
+            <span key={index} className="block md:mr-[64px]">
                 {children}
             </span>
         ))}

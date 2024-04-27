@@ -17,7 +17,7 @@ export default function App() {
                 <Navbar/>
                 {/* <BackToTop usage={"section"}/> */}
                 <section>
-                  {/* <Hero/> */}
+                  <Hero/>
                   <OnePlatform/>
                   <AppStore/>
                 </section>
