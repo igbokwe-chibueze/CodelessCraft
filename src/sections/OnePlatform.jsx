@@ -19,10 +19,10 @@ const CircleWithImage = ({ imageUrl, x, y }) => {
 
 const OnePlatform = () => {
   return (
-    <div className='w-full h-screen mt-[30px] px-4 md:px-[80px]'>
+    <div className='w-full h-auto md:mt-[30px] px-4 md:px-[80px]'>
       <div className="flex flex-col lg:flex-row md:pl-[32px] h-full">
         {/* Left Column */}
-        <div className="md:w-[490px] md:h-[372px] mt-16 md:mt-[120px] mb-[10px] md:mb-[204px]">
+        <div className="md:w-[490px] md:h-[372px] mt-4 md:mt-[120px] mb-[10px] md:mb-[204px]">
 
           <p className="md:w-[180.50px] md:h-[21px] text-pry text-base font-semibold leading-normal">
             The place for growth
@@ -52,7 +52,7 @@ const OnePlatform = () => {
         </div>
 
         {/* Right Column */}
-        <div className="relative md:w-[798px] md:h-[700px]">
+        <div className="relative md:w-[798px] md:h-[700px] mt-2 md:mt-0">
           <CircularWeb className={'w-full md:w-[599px] h-full md:h-[535px] mb-10 md:mb-0'}/>
 
           {/* Small Screen */}
