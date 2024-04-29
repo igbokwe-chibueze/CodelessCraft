@@ -2,7 +2,7 @@ import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import Hero from "./sections/Hero";
 import Navbar from "./components/Navbar";
 import OnePlatform from "./sections/OnePlatform";
-import { AppStore, Carousel } from "./sections";
+import { AppStore, Carousel, SoftwareBuilder } from "./sections";
 
 
 export default function App() {
@@ -21,6 +21,7 @@ export default function App() {
                   <OnePlatform/>
                   <AppStore/>
                   <Carousel/>
+                  <SoftwareBuilder/>
                 </section>
               </div>
             }
