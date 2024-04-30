@@ -10,7 +10,7 @@ const DesignWithLocalStyles = () => {
             </h3>
 
             <h1 
-                className="pt-[11px] text-[34px] font-semibold tracking-[-0.72px] leading-[34px] text-lefttext-secColor
+                className="pt-[11px] text-[34px] font-semibold tracking-[-0.72px] leading-[34px] text-left text-secColor
                 md:w-[556px]"
             >
                 Design with Local Styles Including Colors, Typography, and more

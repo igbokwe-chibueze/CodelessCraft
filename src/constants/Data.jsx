@@ -1,4 +1,4 @@
-import { VisaLogo } from "../assets/Icons";
+import { CompanyIcon, LaptopIcon, PenIcon, PeopleIcon, RocketIcon, ScholarIcon } from "../assets";
 
 
 export const navLinks = [
@@ -9,9 +9,36 @@ export const navLinks = [
   { href: '#', text: 'Community', width: '85px', left: '260px' },
 ];
 
-// export const brands = [
-//   { id: 1, src: VisaLogo, alt: 'Brand 1' },
-//   { id: 2, src: VisaLogo, alt: 'Brand 2' },
-//   { id: 3, src: VisaLogo, alt: 'Brand 3' },
-// ];
+export const sectionsData = [
+  {
+    title: "Junior, Mid and Senior Designers1",
+    description: "Ideal for designers at all levels seeking design system guidance and inspiration.",
+    image: PenIcon
+  },
+  {
+    title: "Freelancers",
+    description: "Tailored for independent creatives looking to streamline their design projects.",
+    image: LaptopIcon
+  },
+  {
+    title: "Students",
+    description: "A valuable resource for students improving their design skills and understanding design systems.",
+    image: ScholarIcon
+  },
+  {
+    title: "Startups",
+    description: "Essential for startups aiming to establish a cohesive and professional brand presence.",
+    image: RocketIcon
+  },
+  {
+    title: "Agencies",
+    description: "Perfect for design agencies that require consistency and efficiency in their projects.",
+    image: PeopleIcon
+  },
+  {
+    title: "Enterprises",
+    description: "Designed to support large enterprises in maintaining consistency and improving workflows.",
+    image: CompanyIcon
+  },
+];
   

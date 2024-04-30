@@ -9,6 +9,12 @@ import Lens from './lens.png'
 import Car from './car.png'
 import Combs from './combs.png'
 import ColorVariables from './colorVariables.png'
+import PenIcon from './PenIcon.png'
+import CompanyIcon from './CompanyIcon.png'
+import PeopleIcon from './PeopleIcon.png'
+import ScholarIcon from './ScholarIcon.png'
+import RocketIcon from './RocketIcon.png'
+import LaptopIcon from './LaptopIcon.png'
 
 export {
     SVG,
@@ -21,5 +27,12 @@ export {
     Lens,
     Car,
     Combs,
-    ColorVariables
+    ColorVariables,
+    PenIcon,
+    CompanyIcon,
+    PeopleIcon,
+    ScholarIcon,
+    RocketIcon,
+    LaptopIcon,
+
 }
