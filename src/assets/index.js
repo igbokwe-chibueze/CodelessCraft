@@ -8,6 +8,7 @@ import Massage from './massage.png'
 import Lens from './lens.png'
 import Car from './car.png'
 import Combs from './combs.png'
+import ColorVariables from './colorVariables.png'
 
 export {
     SVG,
@@ -20,5 +21,5 @@ export {
     Lens,
     Car,
     Combs,
-    
+    ColorVariables
 }
