@@ -15,6 +15,15 @@ import PeopleIcon from './PeopleIcon.png'
 import ScholarIcon from './ScholarIcon.png'
 import RocketIcon from './RocketIcon.png'
 import LaptopIcon from './LaptopIcon.png'
+import BlackGirl from './BlackGirl.png'
+import WhiteGirl from './WhiteGirl.png'
+import BlackGuy2 from './BlackGuy2.png'
+import WhiteGuy2 from './WhiteGuy2.png'
+import BlondGirl from './BlondGirl.png'
+import OldMan from './OldMan.png'
+import StarBoy from './StarBoy.png'
+import BlackGirl2 from './BlackGirl2.png'
+import WhiteBoy from './WhiteBoy.png'
 
 export {
     SVG,
@@ -34,5 +43,14 @@ export {
     ScholarIcon,
     RocketIcon,
     LaptopIcon,
+    BlackGirl,
+    WhiteGirl,
+    BlackGuy2,
+    WhiteGuy2,
+    BlondGirl,
+    OldMan,
+    StarBoy,
+    BlackGirl2,
+    WhiteBoy
 
 }

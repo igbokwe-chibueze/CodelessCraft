@@ -21,7 +21,7 @@ const IdealForEveryone = () => {
                             // When index is 0, 1, 3, 4, 6, 7, 9, 10, etc., the remainder is not 2, so the expression evaluates to false.
                             className={`relative py-2 md:py-[36px] px-4 md:px-[38px] space-y-2 md:space-y-4 border-l 
                             ${index % 3 === 2 ? ' border-t border-l border-r' : ' border-t border-l border-r md:border-r-0'} 
-                            ${index >= 3 ? 'md:border-b' : ''}`}
+                            ${index >= 3 ? 'border-b' : ''}`}
                         >
                             <img src={section.image} alt="" className="object-contain" />
                             <div className="space-y-2">

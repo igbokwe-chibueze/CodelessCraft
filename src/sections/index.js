@@ -1,11 +1,12 @@
 import AppStore from "./AppStore";
+import BuildingTool from "./BuildingTool";
 import Carousel from "./Carousel";
 import DesignWithLocalStyles from "./DesignWithLocalStyles";
+import ForPros from "./ForPros";
 import Hero from "./Hero";
 import IdealForEveryone from "./IdealForEveryone";
 import OnePlatform from "./OnePlatform";
 import SoftwareBuilder from "./SoftwareBuilder";
-
 
 export {
     Hero,
@@ -14,5 +15,7 @@ export {
     Carousel,
     SoftwareBuilder,
     DesignWithLocalStyles,
-    IdealForEveryone
+    IdealForEveryone,
+    BuildingTool,
+    ForPros
 }

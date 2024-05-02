@@ -41,4 +41,13 @@ export const sectionsData = [
     image: CompanyIcon
   },
 ];
+
+export const buildingTools = [
+  { number: "01", text: "Faster for collaboration" },
+  { number: "02", text: "Faster for collaboration" },
+  { number: "03", text: "Faster for collaboration" },
+  { number: "04", text: "Faster for collaboration" },
+  { number: "05", text: "Faster for collaboration" },
+  { number: "06", text: "Faster for collaboration" },
+]
   

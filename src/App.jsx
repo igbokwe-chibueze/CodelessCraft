@@ -2,7 +2,7 @@ import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import Hero from "./sections/Hero";
 import Navbar from "./components/Navbar";
 import OnePlatform from "./sections/OnePlatform";
-import { AppStore, Carousel, DesignWithLocalStyles, IdealForEveryone, SoftwareBuilder } from "./sections";
+import { AppStore, BuildingTool, Carousel, DesignWithLocalStyles, ForPros, IdealForEveryone, SoftwareBuilder } from "./sections";
 
 
 export default function App() {
@@ -24,6 +24,8 @@ export default function App() {
                   <SoftwareBuilder/>
                   <DesignWithLocalStyles/>
                   <IdealForEveryone/>
+                  <BuildingTool/>
+                  <ForPros/>
                 </section>
               </div>
             }
