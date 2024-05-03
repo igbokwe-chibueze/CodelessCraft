@@ -24,6 +24,9 @@ import OldMan from './OldMan.png'
 import StarBoy from './StarBoy.png'
 import BlackGirl2 from './BlackGirl2.png'
 import WhiteBoy from './WhiteBoy.png'
+import CTARight from './CTARight.png'
+import CTALeft from './CTALeft.png'
+import CTA_Bg from './CTA_Bg.png'
 
 export {
     SVG,
@@ -51,6 +54,9 @@ export {
     OldMan,
     StarBoy,
     BlackGirl2,
-    WhiteBoy
+    WhiteBoy,
+    CTARight,
+    CTALeft,
+    CTA_Bg
 
 }

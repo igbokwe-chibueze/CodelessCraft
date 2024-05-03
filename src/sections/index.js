@@ -1,5 +1,6 @@
 import AppStore from "./AppStore";
 import BuildingTool from "./BuildingTool";
+import CTASection from "./CTASection";
 import Carousel from "./Carousel";
 import DesignWithLocalStyles from "./DesignWithLocalStyles";
 import ForPros from "./ForPros";
@@ -17,5 +18,6 @@ export {
     DesignWithLocalStyles,
     IdealForEveryone,
     BuildingTool,
-    ForPros
+    ForPros,
+    CTASection,
 }

@@ -2,7 +2,7 @@ import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import Hero from "./sections/Hero";
 import Navbar from "./components/Navbar";
 import OnePlatform from "./sections/OnePlatform";
-import { AppStore, BuildingTool, Carousel, DesignWithLocalStyles, ForPros, IdealForEveryone, SoftwareBuilder } from "./sections";
+import { AppStore, BuildingTool, CTASection, Carousel, DesignWithLocalStyles, ForPros, IdealForEveryone, SoftwareBuilder } from "./sections";
 
 
 export default function App() {
@@ -26,6 +26,7 @@ export default function App() {
                   <IdealForEveryone/>
                   <BuildingTool/>
                   <ForPros/>
+                  <CTASection/>
                 </section>
               </div>
             }
