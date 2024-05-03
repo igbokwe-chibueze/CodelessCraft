@@ -8,6 +8,7 @@ export default {
     extend: {
       fontFamily: {
         baseFont: ['Inter', 'sans-serif'],
+        jaldi: ['Jaldi', 'sans-serif']
       },
       colors: {
         pry: '#2F2A8D',

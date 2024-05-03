@@ -3,6 +3,7 @@ import BuildingTool from "./BuildingTool";
 import CTASection from "./CTASection";
 import Carousel from "./Carousel";
 import DesignWithLocalStyles from "./DesignWithLocalStyles";
+import Footer from "./Footer";
 import ForPros from "./ForPros";
 import Hero from "./Hero";
 import IdealForEveryone from "./IdealForEveryone";
@@ -20,4 +21,5 @@ export {
     BuildingTool,
     ForPros,
     CTASection,
+    Footer
 }

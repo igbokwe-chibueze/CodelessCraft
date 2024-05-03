@@ -1,4 +1,5 @@
 import { CompanyIcon, LaptopIcon, PenIcon, PeopleIcon, RocketIcon, ScholarIcon } from "../assets";
+import { FacebookIcon, GithubIcon, InstagramIcon, TwitterIcon } from "../assets/Icons";
 
 
 export const navLinks = [
@@ -50,4 +51,68 @@ export const buildingTools = [
   { number: "05", text: "Faster for collaboration" },
   { number: "06", text: "Faster for collaboration" },
 ]
+
+export const footerLinks = [
+  {
+    title: "Products",
+    links: [
+      { name: "Universal checkout", link: "#" },
+      { name: "Payment workflows", link: "#" },
+      { name: "Observability", link: "#" },
+      { name: "UpliftAI", link: "#" },
+      { name: "Apps & integrations", link: "#" },
+    ],
+  },
+  {
+    title: "Why Us",
+    links: [
+      { name: "Expand to new markets", link: "#" },
+      { name: "Boost payment success", link: "#" },
+      { name: "Improve conversion rates", link: "#" },
+      { name: "Reduce payments fraud", link: "#" },
+      { name: "Recover revenue", link: "#" },
+    ],
+  },
+  {
+    title: "Developers",
+    links: [
+      { name: "Primer Docs", link: "#" },
+      { name: "API Reference", link: "#" },
+      { name: "Payment methods guide", link: "#" },
+      { name: "Service status", link: "#" },
+      { name: "Community", link: "#" },
+    ],
+  },
+  {
+    title: "Resources",
+    links: [
+      { name: "Blog", link: "#" },
+      { name: "Success stories", link: "#" },
+      { name: "News room", link: "#" },
+      { name: "Terms", link: "#" },
+      { name: "Privacy", link: "#" },
+    ],
+  },
+  {
+    title: "Company",
+    links: [
+      { name: "Careers", link: "#" },
+    ],
+  },
+];
+
+export const socialMedia = [
+  { imgURL: <TwitterIcon className={"w-6 h-6 fill-secColor2"}/>, 
+    label: "facebook logo" 
+  },
+  { imgURL: <FacebookIcon className={"w-6 h-6 fill-secColor2"}/>, 
+    label: "twitter logo" 
+  },
+  { imgURL: <InstagramIcon className={"w-6 h-6 fill-secColor2"}/>, 
+    label: "instagram logo" 
+  },
+  { imgURL: <GithubIcon className={"w-6 h-6 fill-secColor2"}/>, 
+    label: "instagram logo" 
+  },
+];
   
