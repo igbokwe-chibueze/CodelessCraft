@@ -45,11 +45,11 @@ export const sectionsData = [
 
 export const buildingTools = [
   { number: "01", text: "Faster for collaboration" },
-  { number: "02", text: "Faster for collaboration" },
-  { number: "03", text: "Faster for collaboration" },
-  { number: "04", text: "Faster for collaboration" },
-  { number: "05", text: "Faster for collaboration" },
-  { number: "06", text: "Faster for collaboration" },
+  { number: "02", text: "Accessible for everyone" },
+  { number: "03", text: "Faster loading" },
+  { number: "04", text: "Resilient infrastructure" },
+  { number: "05", text: "Customize everything" },
+  { number: "06", text: "Impress clients" },
 ]
 
 export const footerLinks = [

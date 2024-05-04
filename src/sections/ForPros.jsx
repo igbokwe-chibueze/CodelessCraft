@@ -1,25 +1,31 @@
 /* eslint-disable react/prop-types */
+import { useRef } from "react";
+import { useInView } from "framer-motion";
 import { motion } from "framer-motion";
 import { BlackGuy2, BlondGirl, OldMan, StarBoy, WhiteGirl, WhiteGuy2 } from "../assets";
 
 
-const CircleWithImage = ({ imageUrl, x, y }) => {
+const CircleWithImage = ({ imageUrl, x, y, isInView }) => {
     return (
       <motion.div 
-        className="absolute flex justify-center items-center"
-        initial={{ x: 0, y: 0 }} // Common initial position
-        whileInView={{ x: x, y: y }}
-        viewport={{ once: false }}
-        transition={{ duration: 1.5 }}
+        className="absolute"
+        style={{
+          transform: isInView ? `translateX(${x}) translateY(${y})` : "translateX(0px) translateY(0px)",
+          transition: "all 1.5s cubic-bezier(0.17, 0.55, 0.55, 1) 0s"
+        }}
       >
-        <img src={imageUrl} alt="Circle" className="rounded-full object-cover " />
+        <img src={imageUrl} alt="Circle" className="rounded-full object-cover" />
       </motion.div>
     );
 };
 
 const ForPros = () => {
+
+    const ref = useRef(null);
+    const isInView = useInView(ref, { once: false });
+
   return (
-    <div className="w-full h-[533px] px-4 md:px-[112px] py-[33px]">
+    <div className="w-full h-full px-4 md:px-[112px] py-[33px] ">
         <div className="grid md:grid-cols-2 mt-4 md:mt-8">
             {/* Text */}
             <div className="md:py-[57px]">
@@ -43,18 +49,9 @@ const ForPros = () => {
             </div>
 
             {/* Images */}
-            <div 
-                className="w-full h-full"
-            >
-                <div className=" hidden relative md:flex justify-center items-center w-full h-[500px] ">
-                    <CircleWithImage imageUrl={WhiteGuy2} x={0} y={0}/>
-                    <CircleWithImage imageUrl={BlondGirl} x={-170} y={71}/>
-                    <CircleWithImage imageUrl={BlackGuy2} x={-30} y={172}/>
-                    <CircleWithImage imageUrl={WhiteGirl} x={-111} y={-139}/>
-                    <CircleWithImage imageUrl={OldMan} x={126} y={-155}/>
-                    <CircleWithImage imageUrl={StarBoy} x={168} y={58}/>
-                </div>
+            <div className="w-full h-full" ref={ref} >
 
+                {/*mobile screen*/}
                 <div className="flex justify-center items-center md:hidden -space-x-4 overflow-hidden p-2">
                     <img src={WhiteGuy2} alt="" className=" w-14 h-14 border-2 border-white rounded-full " />
                     <img src={BlondGirl} alt="" className=" w-14 h-14 border-2 border-white rounded-full " />
@@ -62,6 +59,16 @@ const ForPros = () => {
                     <img src={WhiteGirl} alt="" className=" w-14 h-14 border-2 border-white rounded-full " />
                     <img src={OldMan} alt="" className=" w-14 h-14 border-2 border-white rounded-full " />
                     <img src={StarBoy} alt="" className=" w-14 h-14 border-2 border-white rounded-full " />
+                </div>
+
+                {/*large screen*/}
+                <div className=" hidden relative md:flex justify-center items-center w-full h-[500px] ">
+                    <CircleWithImage imageUrl={WhiteGuy2} x={"0%"} y={'0%'} isInView={isInView}/>
+                    <CircleWithImage imageUrl={BlondGirl} x={'-120%'} y={'71%'} isInView={isInView}/>
+                    <CircleWithImage imageUrl={BlackGuy2} x={'-10%'} y={'130%'} isInView={isInView}/>
+                    <CircleWithImage imageUrl={WhiteGirl} x={'-80%'} y={'-80%'} isInView={isInView}/>
+                    <CircleWithImage imageUrl={OldMan} x={'100%'} y={'-100%'} isInView={isInView}/>
+                    <CircleWithImage imageUrl={StarBoy} x={'130%'} y={'58%'} isInView={isInView}/>
                 </div>
 
             </div>

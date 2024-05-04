@@ -18,7 +18,6 @@ export default {
         secColor3: '#D2D2D2',
       },
       backgroundImage: {
-        circularWeb: 'url("/src/assets/SVG.png")',
         // circularWeb: 'repeating-radial-gradient(rgba(0,0,0,0.4) 4px, rgba(0,0,0,0) 5px, rgba(0,0,0,0) 85px);',
       }
     },

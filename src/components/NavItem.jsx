@@ -48,7 +48,8 @@ const NavItem = ({ data }) => {
           <a 
             key={index}
             href={link.href} 
-            className={`px-3 py-2 leading-normal text-sm text-secColor2 rounded z-10`}
+            className={` px-3 py-2 text-[14px] font-normal tracking-normal leading-[14px] text-left text-secColor2 rounded z-10`}
+            // className={`px-3 py-2 leading-normal text-sm text-secColor2 rounded z-10`}
             onMouseEnter={() => handleHover(index)} 
             onClick={() => handleClick(index)}
           >
@@ -72,7 +73,6 @@ const NavItem = ({ data }) => {
         >
           Request Demo
         </a>
-
       </div>
     </div>
   );

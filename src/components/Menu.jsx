@@ -81,9 +81,9 @@ const Menu = () => {
     }, []); // The empty dependency array ensures this effect only runs once when the component is mounted.
 
   return (
-    <div>
+    <>
       {/* Hamburger */}
-      <div className='lg:hidden'>
+      <div>
         <button type="button"
           onClick={() => setMenuToggle(!menuToggle)}  // Toggle the 'toggle' state when the icon is clicked.
           className="relative z-50 hamburgerBtn"
@@ -124,7 +124,7 @@ const Menu = () => {
           exit="exit"
           className={`${
                 !menuToggle ? "hidden" : "block"  // Conditionally display the menu based on 'toggle' state.
-            } absolute right-0 top-0 mt-0 w-4/5 tablet:w-1/2 h-screen pt-2 pb-4 z-40 backdrop-blur-xl bg-caribbean-current/90 shadow-lg`}
+            } absolute right-0 top-0 mt-0 w-4/5 tablet:w-1/2 h-screen pt-2 pb-4 z-40 backdrop-blur-xl bg-white shadow-lg`}
         >
           <motion.div 
             className='flex-1 flex-col justify-center items-center w-5/6 mt-12 ml-16'
@@ -172,7 +172,7 @@ const Menu = () => {
         </motion.div>
       )}  
       </AnimatePresence>   
-    </div>
+    </>
   )
 }
 

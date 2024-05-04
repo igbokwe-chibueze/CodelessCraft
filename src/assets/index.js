@@ -17,6 +17,8 @@ import RocketIcon from './RocketIcon.png'
 import LaptopIcon from './LaptopIcon.png'
 import BlackGirl from './BlackGirl.png'
 import WhiteGirl from './WhiteGirl.png'
+import WhiteGirl2 from './WhiteGirl2.png'
+import WhiteGirl3 from './WhiteGirl3.png'
 import BlackGuy2 from './BlackGuy2.png'
 import WhiteGuy2 from './WhiteGuy2.png'
 import BlondGirl from './BlondGirl.png'
@@ -27,6 +29,8 @@ import WhiteBoy from './WhiteBoy.png'
 import CTARight from './CTARight.png'
 import CTALeft from './CTALeft.png'
 import CTA_Bg from './CTA_Bg.png'
+import YellowArrow from './YellowArrow.png'
+import PinkArrow from './PinkArrow.png'
 
 export {
     SVG,
@@ -57,6 +61,9 @@ export {
     WhiteBoy,
     CTARight,
     CTALeft,
-    CTA_Bg
-
+    CTA_Bg,
+    WhiteGirl2,
+    WhiteGirl3,
+    YellowArrow,
+    PinkArrow,
 }

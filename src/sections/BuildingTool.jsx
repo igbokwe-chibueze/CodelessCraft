@@ -1,5 +1,29 @@
+import { motion } from "framer-motion"
 import { BlackGirl, BlackGirl2, WhiteBoy } from "../assets"
 import { buildingTools } from "../constants/Data"
+motion
+
+const scaleVariants = {
+    hidden: { 
+        opacity: 0, 
+        scale: 0 
+    },
+    show: { 
+        opacity: 1, 
+        scale: 1, 
+        transition: { 
+            //For instance, if staggerChildren is 0.01, the first child will be delayed by 0 seconds, 
+            //the second by 0.01, the third by 0.02 and so on.
+            staggerChildren: 0.2 
+        } 
+    },
+};
+  
+
+const scaleChildrenVariants = {
+    hidden: { opacity: 0, scale: 0 },
+    show: { opacity: 1, scale: 1, transition: { duration: .9 } },
+};
 
 const BuildingTool = () => {
   return (
@@ -14,7 +38,7 @@ const BuildingTool = () => {
         </div>
 
         <div className=" flex flex-col-reverse md:flex-row justify-start items-start pt-4 md:pt-10 h-full md:h-[280px] ">
-            <div className=" grid grid-cols-2 md:grid-cols-3 gap-2 md:gap-9 md:w-[60%] h-full ">
+            <div className=" grid grid-cols-2 md:grid-cols-3 gap-2 md:gap-9 w-full md:w-[60%] h-full ">
                 {buildingTools.map((tool, index) => (
                     <div key={index}>
                         <p className=" text-[21px] font-normal tracking-normal leading-[29px] text-left text-secColor2 ">
@@ -27,14 +51,20 @@ const BuildingTool = () => {
                 ))}
             </div>
             {/* show on large screens only */}
-            <div className=" hidden md:flex relative md:w-[40%] h-full ">
-                <img src={BlackGirl} alt="WhiteBoy" className="absolute -top-8 left-28 " />
-                <img src={BlackGirl2} alt="WhiteBoy" className="absolute top-12 right-0 " />
-                <img src={WhiteBoy} alt="WhiteBoy" className="absolute bottom-0 left-36 " />
-            </div>
+            <motion.div 
+                variants={scaleVariants}
+                initial="hidden"
+                whileInView="show"
+
+                className=" hidden md:flex relative md:w-[40%] h-full "
+            >
+                <motion.img src={BlackGirl} alt="WhiteBoy" variants={scaleChildrenVariants} className="absolute -top-8 left-28 " />
+                <motion.img src={BlackGirl2} alt="WhiteBoy" variants={scaleChildrenVariants} className="absolute top-12 right-0 " />
+                <motion.img src={WhiteBoy} alt="WhiteBoy" variants={scaleChildrenVariants} className="absolute bottom-0 left-36 " />
+            </motion.div>
 
             {/* show on mobile only */}
-            <div className=" flex justify-center items-center md:hidden -space-x-4 overflow-hidden p-2 mb-4 md:mb-0 w-full bg-secColor2 ">
+            <div className=" flex justify-center items-center md:hidden -space-x-4 overflow-hidden p-2 mb-4 md:mb-0 w-full bg-pry2 ">
                 <img src={BlackGirl} alt="WhiteBoy" className=" z-[2] w-14 h-14 border-2 border-white rounded-full " />
                 <img src={BlackGirl2} alt="WhiteBoy" className=" z-[1] w-14 h-14 border-2 border-white rounded-full " />
                 <img src={WhiteBoy} alt="WhiteBoy" className=" w-14 h-14 border-2 border-white rounded-full " />
