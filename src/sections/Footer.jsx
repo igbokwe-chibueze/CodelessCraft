@@ -1,3 +1,4 @@
+import { ShinyButton } from "../components"
 import { footerLinks, socialMedia } from "../constants/Data"
 
 const Footer = () => {
@@ -5,9 +6,15 @@ const Footer = () => {
     <footer className="w-full h-full px-4 md:px-[112px] py-[75px] ">
         {/* <div className='flex justify-between items-start gap-[67px] flex-wrap '> */}
         <div className=' md:flex justify-between items-start md:space-x-[67px] '>
-            <h1 className=" font-jaldi text-[54px] md:text-[54px] font-bold tracking-normal leading-[48px] text-left text-secColor2 ">
-                CodelessCraft
-            </h1>
+            <div className=" space-y-4 ">
+                <h1 className=" font-jaldi text-[54px] md:text-[54px] font-bold tracking-normal leading-[48px] text-left text-secColor2 ">
+                    CodelessCraft
+                </h1>
+
+                <div className=" flex justify-center items-center bg-neutral-950 py-4 px-4 ">
+                 <ShinyButton/>
+                </div>
+            </div>
 
             <div className=' grid md:grid-cols-3 gap-10 md:gap-20 mt-4 md:mt-0'>
                 {footerLinks.map((section) => (
@@ -36,6 +43,7 @@ const Footer = () => {
                         
                         <div className="relative w-5/6">
                             <div className="pointer-events-auto absolute inset-y-0 right-0 flex items-center pr-4 w-8 bg-secColor rounded-r-full ">
+                                {/* This was for the search icon */}
                                 {/* <svg className="absolute text-slate-400 h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                                     <path 
                                         fillRule="evenodd" 

@@ -5,48 +5,102 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Hero */
-.webTypes {
-    @apply flex justify-center items-center md:w-32 h-7 px-4 py-1 bg-white rounded-md border-2 shadow-sm;
+@layer base {
+  :root {
+    --radial-gradient-background: 250, 250, 250;
+    --solid-color-background: 15, 15, 15;
+    --overlay-color: 255, 255, 255;
+  }
+}
+
+@layer utilities {
+  .radial-gradient {
+    background: radial-gradient(
+      circle at 50% 0%,
+      rgba(var(--radial-gradient-background), 0.05) 0%,
+      transparent 60%
+    )
+    rgba(var(--solid-color-background), 1);
   }
   
-.webTypes p {
-    @apply text-center text-secColor2 text-sm font-normal leading-tight text-nowrap
+  .linear-mask {
+    mask-image: linear-gradient(
+      -75deg,
+      white calc(var(--x) + 20%),
+      transparent calc(var(--x) + 30%),
+      white calc(var(--x) + 100%)
+    );
+    -webkit-mask-image: linear-gradient(
+      -75deg,
+      white calc(var(--x) + 20%),
+      transparent calc(var(--x) + 30%),
+      white calc(var(--x) + 100%)
+    );
+  }
+  
+  .linear-overlay {
+    background-image: linear-gradient(
+      -75deg,
+      rgba(var(--overlay-color), 0.1) calc(var(--x) + 20%),
+      rgba(var(--overlay-color), 0.5) calc(var(--x) + 25%),
+      rgba(var(--overlay-color), 0.1) calc(var(--x) + 100%)
+    );
+    mask:
+      linear-gradient(black, black) content-box,
+      linear-gradient(black, black);
+    -webkit-mask:
+      linear-gradient(black, black) content-box,
+      linear-gradient(black, black);
+    mask-composite: exclude;
+    -webkit-mask-composite: xor;
+  }
 }
 
-/* ParallaxText Component*/
-.parallax {
-  @apply flex w-full overflow-hidden tracking-tight leading-none whitespace-nowrap flex-nowrap
-}
 
-.scroller {
-  @apply flex justify-center items-center w-fit font-semibold uppercase text-4xl md:text-6xl whitespace-nowrap flex-nowrap
+@layer components {
+  /* Hero */
+  .webTypes {
+      @apply flex justify-center items-center md:w-32 h-7 px-4 py-1 bg-white rounded-md border-2 shadow-sm;
+    }
+    
+  .webTypes p {
+      @apply text-center text-secColor2 text-sm font-normal leading-tight text-nowrap
+  }
+  
+  /* ParallaxText Component*/
+  .parallax {
+    @apply flex w-full overflow-hidden tracking-tight leading-none whitespace-nowrap flex-nowrap
+  }
+  
+  .scroller {
+    @apply flex justify-center items-center w-fit font-semibold uppercase text-4xl md:text-6xl whitespace-nowrap flex-nowrap
+  }
+  /*** end parallaxtext component***/
+  
+  .hamburgerBtn{
+    @apply block p-1 rounded-md hover:bg-secColor2 hover:rounded-lg transition-all duration-300 ease-linear focus:bg-secColor3 focus:rounded-lg
+  }
+  
+    /* Testimonials Section */ 
+  
+    /* Styles your custom buttons */
+  .testimonial .slick-arrow.slick-prev,
+  .testimonial .slick-arrow.slick-next {
+    @apply w-4 h-full z-10 mx-6 p-4 shadow-2xl md:bg-transparent;
+  }
+  
+  /* Hides the default buttons */
+  .testimonial .slick-prev::before,
+  .testimonial .slick-next::before {
+    @apply hidden;
+  }
+  
+  .testimonial .slick-slide > div {
+    @apply transform scale-[.90] transition-transform duration-700 ease-in-out;
+  }
+  
+  .testimonial .slick-center > div {
+    @apply transform scale-100;
+  }
+  /*** end testimonials section ***/ 
 }
-/*** end parallaxtext component***/
-
-.hamburgerBtn{
-  @apply block p-1 rounded-md hover:bg-secColor2 hover:rounded-lg transition-all duration-300 ease-linear focus:bg-secColor3 focus:rounded-lg
-}
-
-  /* Testimonials Section */ 
-
-  /* Styles your custom buttons */
-.testimonial .slick-arrow.slick-prev,
-.testimonial .slick-arrow.slick-next {
-  @apply w-4 h-full z-10 mx-6 p-4 shadow-2xl md:bg-transparent;
-}
-
-/* Hides the default buttons */
-.testimonial .slick-prev::before,
-.testimonial .slick-next::before {
-  @apply hidden;
-}
-
-.testimonial .slick-slide > div {
-  @apply transform scale-[.90] transition-transform duration-700 ease-in-out;
-}
-
-.testimonial .slick-center > div {
-  @apply transform scale-100;
-}
-/*** end testimonials section ***/ 
