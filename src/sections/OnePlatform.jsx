@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import { useRef } from "react";
 import { useInView } from "framer-motion";
-import { BlackGirl, BlackGirl2, BlackGuy2, WhiteGirl, WhiteGuy, WhiteGuy2 } from "../assets";
+import { BlackGirl, BlackGirl2, BlackGuy2, OldMan, WhiteGirl, WhiteGuy2 } from "../assets";
 import { motion } from "framer-motion";
 
 const CircleWithImage = ({ imageUrl, x, y, isInView }) => {
@@ -34,11 +34,10 @@ const OnePlatform = () => {
    const ref = useRef(null);
    const isInView = useInView(ref, { once: false });
   return (
-    <div className='w-full h-auto md:mt-[30px] mb-[41px] px-4 md:px-[40px] lg:px-[80px] bg-[#FBFBFC]'>
-      <div className="flex flex-col md:flex-row h-auto md:h-screen ">
-      {/* <div className="flex flex-col lg:flex-row md:pl-[32px] h-full "> */}
+    <div className='w-full h-auto md:mt-[30px] mb-[41px] px-4 md:px-[40px] lg:px-[80px] bg-[#FBFBFC] '>
+      <div className="flex flex-col lg:flex-row h-auto ">
         {/* Left Column */}
-        <div className="md:w-[490px] md:h-[372px] mt-4 md:mt-[120px] mb-[10px] md:mb-[204px]">
+        <div className="md:w-[490px] md:h-[372px] mt-4 md:mt-[120px] mb-[10px]">
 
           <h3 className="text-[16px] font-semibold tracking-normal leading-[24px] text-left text-pry">
             The place for growth
@@ -76,7 +75,7 @@ const OnePlatform = () => {
           <div className="relative flex justify-center items-center w-full h-full  ">
 
             <CircleWithImage imageUrl={BlackGirl2} x={0} y={0} isInView={isInView}/>
-            <CircleWithImage imageUrl={WhiteGuy} x={"-160%"} y={"-180%"} isInView={isInView}/>
+            <CircleWithImage imageUrl={OldMan} x={"-160%"} y={"-180%"} isInView={isInView}/>
             <CircleWithImage imageUrl={WhiteGuy2} x={"-155%"} y={"60%"} isInView={isInView}/>
             <CircleWithImage imageUrl={WhiteGirl} x={"150%"} y={"40%"} isInView={isInView}/>
             <CircleWithImage imageUrl={BlackGuy2} x={"30%"} y={"200%"} isInView={isInView}/>

@@ -60,7 +60,7 @@
 @layer components {
   /* Hero */
   .webTypes {
-      @apply flex justify-center items-center md:w-32 h-7 px-4 py-1 bg-white rounded-md border-2 shadow-sm;
+      @apply flex justify-center items-center md:w-32 h-10 md:h-7 px-4 py-1 bg-white rounded-md border-2 shadow-sm;
     }
     
   .webTypes p {

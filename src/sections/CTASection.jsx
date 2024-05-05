@@ -3,7 +3,7 @@ import { MagicWandIcon } from "../assets/Icons"
 
 const CTASection = () => {
   return (
-    <div className="w-full h-full px-4 md:px-[112px] md:pt-[87px] pb-4 md:pb-[112px] md:mt-28 ">
+    <div className="w-full h-full px-4 md:px-8 lg:px-[112px] lg:pt-[87px] pb-4 lg:pb-[112px] lg:mt-28 ">
         <div className=" relative flex justify-between h-[234px] bg-secColor3 ">
             <img src={CTA_Bg} alt="CTA_Bg" className=" absolute inset-0 " />
 
@@ -30,7 +30,7 @@ const CTASection = () => {
                 </button>
             </div>
 
-            <img src={CTARight} alt="CTARight"  />
+            <img src={CTARight} alt="CTARight"  className=" md:hidden lg:block"/>
         </div>
     </div>
   )

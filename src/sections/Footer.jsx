@@ -3,20 +3,19 @@ import { footerLinks, socialMedia } from "../constants/Data"
 
 const Footer = () => {
   return (
-    <footer className="w-full h-full px-4 md:px-[112px] py-[75px] ">
-        {/* <div className='flex justify-between items-start gap-[67px] flex-wrap '> */}
-        <div className=' md:flex justify-between items-start md:space-x-[67px] '>
+    <footer className="w-full h-full px-4 md:px-8 lg:px-[112px] py-[75px] ">
+        <div className=' lg:flex justify-between items-start lg:space-x-[67px] '>
             <div className=" space-y-4 ">
                 <h1 className=" font-jaldi text-[54px] md:text-[54px] font-bold tracking-normal leading-[48px] text-left text-secColor2 ">
                     CodelessCraft
                 </h1>
 
-                <div className=" flex justify-center items-center bg-neutral-950 py-4 px-4 ">
+                <div className=" flex justify-center items-center md:w-1/2 lg:w-full bg-neutral-950 py-4 px-4 ">
                  <ShinyButton/>
                 </div>
             </div>
 
-            <div className=' grid md:grid-cols-3 gap-10 md:gap-20 mt-4 md:mt-0'>
+            <div className=' grid md:grid-cols-3 gap-10 lg:gap-20 mt-4 lg:mt-0'>
                 {footerLinks.map((section) => (
                     <div key={section.title}>
                         <h4 className='text-[18px] font-medium tracking-normal leading-[28px] text-left mb-[18px]'>
@@ -34,12 +33,13 @@ const Footer = () => {
                         </ul>
                     </div>
                 ))}
+                
                 <div>
                     <div className="md:hidden border-t mb-4 "></div>
                     <h4 className='text-[18px] font-medium tracking-normal leading-[28px] text-left mb-[18px]'>
                         Stay up to date
                     </h4>
-                    <div className=" w-[300px] space-y-[10px] ">
+                    <div className=" lg:w-[300px] space-y-[10px] ">
                         
                         <div className="relative w-5/6">
                             <div className="pointer-events-auto absolute inset-y-0 right-0 flex items-center pr-4 w-8 bg-secColor rounded-r-full ">
@@ -75,6 +75,7 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
 

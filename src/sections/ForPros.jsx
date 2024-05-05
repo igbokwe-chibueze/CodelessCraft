@@ -25,17 +25,17 @@ const ForPros = () => {
     const isInView = useInView(ref, { once: false });
 
   return (
-    <div className="w-full h-full px-4 md:px-[112px] py-[33px] ">
-        <div className="grid md:grid-cols-2 mt-4 md:mt-8">
+    <div className="w-full h-full px-4 md:px-8 lg:px-[112px] py-[33px] ">
+        <div className="grid lg:grid-cols-2 mt-4 lg:mt-8">
             {/* Text */}
-            <div className="md:py-[57px]">
+            <div className="lg:py-[57px]">
                 {/* Heading */}
                 <h1 className=" text-[39px] md:text-[56px] font-semibold tracking-normal leading-none text-left text-secColor md:w-[730px]">
                     For Pros, and the ones who want to become experts.
                 </h1>
                 
                 {/* Body */}
-                <div className=" mt-2 md:mt-[24px] space-y-4 md:space-y-[33px] ">
+                <div className=" mt-2 md:mt-4 lg:mt-[24px] space-y-4 lg:space-y-[33px] ">
                     <p className=" text-[16px] md:text-[18px] font-semibold leading-[27px] text-left text-secColor2 ">
                         Whether you&#39;re a solo designer or part of a team, a junior or a senior, 
                         at an agency or a large organization, Prime has you covered.
@@ -52,7 +52,7 @@ const ForPros = () => {
             <div className="w-full h-full" ref={ref} >
 
                 {/*mobile screen*/}
-                <div className="flex justify-center items-center md:hidden -space-x-4 overflow-hidden p-2">
+                <div className="flex justify-center items-center lg:hidden -space-x-4 overflow-hidden p-2 md:p-8">
                     <img src={WhiteGuy2} alt="" className=" w-14 h-14 border-2 border-white rounded-full " />
                     <img src={BlondGirl} alt="" className=" w-14 h-14 border-2 border-white rounded-full " />
                     <img src={BlackGuy2} alt="" className=" w-14 h-14 border-2 border-white rounded-full " />
@@ -62,7 +62,7 @@ const ForPros = () => {
                 </div>
 
                 {/*large screen*/}
-                <div className=" hidden relative md:flex justify-center items-center w-full h-[500px] ">
+                <div className=" hidden relative lg:flex justify-center items-center w-full h-[500px] ">
                     <CircleWithImage imageUrl={WhiteGuy2} x={"0%"} y={'0%'} isInView={isInView}/>
                     <CircleWithImage imageUrl={BlondGirl} x={'-120%'} y={'71%'} isInView={isInView}/>
                     <CircleWithImage imageUrl={BlackGuy2} x={'-10%'} y={'130%'} isInView={isInView}/>

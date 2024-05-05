@@ -3,8 +3,8 @@ import { ColorVariables } from "../assets"
 
 const DesignWithLocalStyles = () => {
   return (
-    <div className="mx-[12px] h-auto rounded-lg md:rounded-[32px] md:flex bg-[#D2EAE1]">
-        <div className="md:ml-[37px] pt-4 md:pt-[198px] md:pb-[312px] px-2 md:px-[12px] w-auto">
+    <div className="mx-[12px] h-auto rounded-lg lg:rounded-[32px] lg:flex bg-[#D2EAE1]">
+        <div className="lg:ml-[37px] pt-4 lg:pt-[198px] lg:pb-[312px] px-2 md:px-[12px] w-auto">
             <h3 className=" text-xs font-medium tracking-[0.48px] leading-4 text-left text-pry">
                 Design System Essentials
             </h3>
@@ -21,7 +21,7 @@ const DesignWithLocalStyles = () => {
             </p>
         </div>
 
-        <div className="md:mr-[11px] md:pt-[16px] md:pb-[80px] w-auto h-auto">
+        <div className="lg:mr-[11px] md:pt-[16px] lg:pb-[80px] w-auto h-auto">
             <img src={ColorVariables} alt="ColorVariables" className=' object-contain'/>
         </div>
 

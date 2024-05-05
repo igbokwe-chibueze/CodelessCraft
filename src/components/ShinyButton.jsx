@@ -30,12 +30,12 @@ const buttonVariants = {
 const ShinyButton = () => {
   return (
     <motion.button
-        variants={buttonVariants}
-        initial="hidden"
-        animate="visible"
-        whileTap={{ scale: 0.97 }}
-        whileHover={{ scale: 1.05 }}
-        className="px-6 py-2 rounded-md relative radial-gradient"
+      variants={buttonVariants}
+      initial="hidden"
+      animate="visible"
+      whileTap={{ scale: 0.97 }}
+      whileHover={{ scale: 1.05 }}
+      className="px-6 py-2 rounded-md relative radial-gradient"
     >
       <span className="text-neutral-100 tracking-wide font-light h-full w-full block relative linear-mask">
         Subscribe
